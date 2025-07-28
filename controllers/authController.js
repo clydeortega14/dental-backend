@@ -1,4 +1,5 @@
 // controllers/authController.js
+const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const db = require('../config/db');
 
@@ -35,7 +36,14 @@ exports.login = async (req, res) => {
     const match = await bcrypt.compare(password, user.password);
     if (!match) return res.status(400).json({ message: 'Invalid email or password' });
 
-    res.status(200).json({ message: 'Login successful', user: { id: user.id, name: user.name, email: user.email } });
+    const token = jwt.sign({id: user.id, email: user.email}, process.env.JWT_SECRET, {expiresIn: '1d'});
+
+
+    res.status(200).json({ 
+      message: 'Login successful',
+      token,
+      user: { id: user.id, name: user.name, email: user.email } 
+    });
   } catch (err) {
     res.status(500).json({ error: 'Login failed', details: err.message });
   }
