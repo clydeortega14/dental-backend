@@ -27,7 +27,7 @@ app.use(cors({
     } else {
       callback(new Error('CORS not allowed for this origin'));
     }
-  }
+  },
   credentials: true, // Only if using cookies or auth headers
 }));
 
