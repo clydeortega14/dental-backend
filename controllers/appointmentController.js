@@ -64,3 +64,42 @@ exports.rescheduleAppointment = async (req, res) => {
     res.status(500).json({error: error.message});
   }
 }
+
+
+exports.confirmedAppointment = async (req, res) => {
+
+  const {appointmentId} = req.body;
+  
+  try {
+
+    await db.query(
+      'UPDATE appointments SET status = ? WHERE id = ?',
+      ['confirmed', appointmentId]
+    );
+
+    res.status(200).json({message: 'Appointment confirmed!'});
+    
+  } catch (error) {
+    res.status(500).json({error: error.message});
+  }
+
+}
+
+exports.completeAppointment = async (req, res) => {
+
+  const {appointmentId} = req.body;
+  
+  try {
+
+    await db.query(
+      'UPDATE appointments SET status = ? WHERE id = ?',
+      ['completed', appointmentId]
+    );
+
+    res.status(200).json({message: 'Appointment completed!'});
+    
+  } catch (error) {
+    res.status(500).json({error: error.message});
+  }
+
+}
