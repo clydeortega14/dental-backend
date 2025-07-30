@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 const authRoutes = require('./routes/auth');
 const appointmentRoutes = require('./routes/appointment');
+const dentistRoutes = require('./routes/dentist');
+
 const cors = require('cors');
 
 const app = express();
@@ -18,6 +20,7 @@ app.use(cors({
 
 app.use('/api/auth', authRoutes);
 app.use('/api/appointments', appointmentRoutes);
+app.use('/api/dentists', dentistRoutes)
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

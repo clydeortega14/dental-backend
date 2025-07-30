@@ -28,3 +28,39 @@ exports.getAppointments = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+exports.cancelAppointment = async (req, res) => {
+  const { appointmentId } = req.body;
+  
+  try {
+
+    await db.query(
+      'UPDATE appointments SET status = ? WHERE id = ?',
+      ['cancelled', appointmentId]
+    );
+
+    res.status(200).json({message: 'Appointment has been cancelled'})
+    
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+}
+
+
+exports.rescheduleAppointment = async (req, res) => {
+  const { appointmentId, resched_date, resched_time } = req.body;
+
+  try {
+
+    await db.query(
+      'UPDATE appointments SET date = ?, time = ?, status = ? WHERE id = ?',
+      [resched_date, resched_time, 'rescheduled', appointmentId]
+    );
+
+    res.status(200).json({message: 'Appointment rescheduled successfully!'});
+    
+  } catch (error) {
+
+    res.status(500).json({error: error.message});
+  }
+}
