@@ -13,8 +13,21 @@ const app = express();
 
 app.use(cookieParser())
 app.use(bodyParser.json());
+
+// allowed origins
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://dt47nb2edopot.cloudfront.net'
+]
 app.use(cors({
-  origin: process.env.ALLOWED_ORIGIN, // process.env.ALLOWED_ORIGIN
+
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('CORS not allowed for this origin'));
+    }
+  }
   credentials: true, // Only if using cookies or auth headers
 }));
 
