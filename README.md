@@ -51,13 +51,20 @@ Coming soon...
 ```bash
 git clone https://github.com/clydeortega14/dental-office-online-scheduling-system-frontend.git
 cd dental-office-online-scheduling-system-frontend
+```
 
-Create a .env file
+### Create a .env file
+```bash
+
 VITE_API_URL=https://api.rent-hive.co/api
 VITE_APP_NAME=DENTALAPP
-
+```
+### install npm and run dev
+```bash
 npm install && npm run dev
+```
 
+```bash
 production
 npm run build
 ```
