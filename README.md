@@ -9,6 +9,7 @@ Coming soon...
 ## 📸 Screenshots
 
 ![Login Page](./public/images/loginpage.png)
+![Register Page](./public/images/registerpage.png)
 ![Appointment Page](./screenshots/appointments.png)
 
 ## 🚀 Features
