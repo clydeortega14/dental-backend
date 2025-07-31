@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 // ]
 
 const corsOptions = {
-  origin: 'http://dental-app-s3.s3-website-ap-southeast-1.amazonaws.com',
+  origin: process.env.ALLOWED_ORIGIN,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
