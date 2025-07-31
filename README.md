@@ -8,7 +8,7 @@ Coming soon...
 
 ## Deployed URL
  - Frontend: https://dt47nb2edopot.cloudfront.net/
- - Backend: https://api.rent-hive.co/
+ - Backend API: https://api.rent-hive.co/
 
 ## 🚀 Features
 
