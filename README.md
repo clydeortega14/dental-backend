@@ -98,7 +98,7 @@ ALLOWED_ORIGIN=https://dt47nb2edopot.cloudfront.net/
 
 ```
 
-### serve the app
+#### serve the app
 ```bash
 nodemon server.js OR node server.js
 ```
