@@ -4,7 +4,7 @@ A full-stack web application that allows patients to register, log in, schedule 
 
 ## 🌐 Live Demo
 
-Coming soon...
+[!Watch the Video](https://drive.google.com/file/d/1SzbbnHciE6ormqt7BRheNjGLd8gaywaI/view?usp=sharing)
 
 ## Deployed URL
  - Frontend: https://dt47nb2edopot.cloudfront.net/
