@@ -1,4 +1,4 @@
-<img width="1024" height="740" alt="image" src="https://github.com/user-attachments/assets/8834ced1-1176-4204-bb24-4ad6b58f0579" /># Dental Appointment Scheduling System 🦷
+# Dental Appointment Scheduling System 🦷
 
 A full-stack web application that allows patients to register, log in, schedule dental appointments, and view appointment details. Built using React, Node.js, Express, MySQL, and JWT for authentication.
 
