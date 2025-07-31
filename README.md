@@ -13,7 +13,11 @@ Coming soon...
 ![Register Page](./public/images/registerpage.png)
 ![Dashboard Page](./public/images/dashboard01.png).
 ![Dashboard Page 02](./public/images/dashboard02.png).
-![Appointment Page](./screenshots/appointments.png).
+![Appointment Page 01](./public/images/select-dentist.png).
+![Appointment Page 02](./public/images/chooseservice.png).
+![Appointment Page 02](./public/images/pickdatetime.png).
+![Appointment Page 02](./public/images/confirmdetails.png).
+![Appointment Page 02](./public/images/appointmentbook.png).
 
 ## 🚀 Features
 
