@@ -6,19 +6,6 @@ A full-stack web application that allows patients to register, log in, schedule 
 
 Coming soon...
 
-## 📸 Screenshots
-![Home Page 01](./public/images/homepage01.png)
-![Home Page 02](./public/images/homepage02.png)
-![Login Page](./public/images/loginpage.png).
-![Register Page](./public/images/registerpage.png)
-![Dashboard Page](./public/images/dashboard01.png).
-![Dashboard Page 02](./public/images/dashboard02.png).
-![Appointment Page 01](./public/images/select-dentist.png).
-![Appointment Page 02](./public/images/chooseservice.png).
-![Appointment Page 02](./public/images/pickdatetime.png).
-![Appointment Page 02](./public/images/confirmdetails.png).
-![Appointment Page 02](./public/images/appointmentbook.png).
-
 ## 🚀 Features
 
 - User registration and login with JWT authentication
@@ -61,3 +48,17 @@ Coming soon...
 ```bash
 cd backend
 npm install
+```
+## 📸 Screenshots
+![Home Page 01](./public/images/homepage01.png)
+![Home Page 02](./public/images/homepage02.png)
+![Login Page](./public/images/loginpage.png).
+![Register Page](./public/images/registerpage.png)
+![Dashboard Page](./public/images/dashboard01.png).
+![Dashboard Page 02](./public/images/dashboard02.png).
+![Appointment Page 01](./public/images/select-dentist.png).
+![Appointment Page 02](./public/images/chooseservice.png).
+![Appointment Page 02](./public/images/pickdatetime.png).
+![Appointment Page 02](./public/images/confirmdetails.png).
+![Appointment Page 02](./public/images/appointmentbook.png).
+
