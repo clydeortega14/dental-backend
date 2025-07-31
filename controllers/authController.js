@@ -43,7 +43,7 @@ exports.login = async (req, res) => {
     res.cookie('token', token, {
       httpOnly: true,
       secure: false,
-      simeSite: 'Lax',
+      simeSite: 'Strict',
       maxAge: 20 * 60 * 60 * 1000 
     })
 
