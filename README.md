@@ -64,6 +64,7 @@ VITE_APP_NAME=DENTALAPP
 npm install && npm run dev
 ```
 
+#### Production build
 ```bash
 production
 npm run build
