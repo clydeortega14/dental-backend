@@ -42,8 +42,8 @@ exports.login = async (req, res) => {
     // HTTP-Only cookies
     res.cookie('token', token, {
       httpOnly: true,
-      secure: true,
-      sameSite: 'None',
+      secure: process.env.HTTP_ONLY_COOKIE_SECURE,
+      sameSite: process.env.HTTP_ONLY_COOKIE_SAMESITE,
       maxAge: 20 * 60 * 60 * 1000 
     })
 
