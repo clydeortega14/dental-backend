@@ -42,16 +42,48 @@ Coming soon...
 
 ## 📦 Installation
 
-### Prerequisites
+## Prerequisites
 
 - Node.js and npm
 - MySQL
 
+### Frontend Setup
+```bash
+git clone https://github.com/clydeortega14/dental-office-online-scheduling-system-frontend.git
+cd dental-office-online-scheduling-system-frontend
+
+Create a .env file
+VITE_API_URL=https://api.rent-hive.co/api
+VITE_APP_NAME=DENTALAPP
+
+npm install && npm run dev
+
+production
+npm run build
+```
+
 ### Backend Setup
+
 
 ```bash
 git clone https://github.com/clydeortega14/dental-backend.git
 cd dental-backend
+
+Create a .env file
+#Database Connection
+DB_HOST=127.0.0.1
+DB_USER=root
+DB_PASSWORD=_DentalApp07!
+DB_NAME=dentaluser
+DB_PORT=3307
+PORT=3000
+
+#JWT
+JWT_SECRET=33AF2B13E19F667F5BF44DF452379
+
+# CORS ORIGIN
+ALLOWED_ORIGIN=https://dt47nb2edopot.cloudfront.net/
+
 npm install
 nodemon server.js OR node server.js
 ```
