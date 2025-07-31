@@ -20,22 +20,16 @@ app.use(bodyParser.json());
 //   'https://dt47nb2edopot.cloudfront.net',
 //   ''
 // ]
-app.use(cors({
 
-  // origin: function(origin, callback) {
-  //   if (!origin || allowedOrigins.includes(origin)) {
-  //     callback(null, true);
-  //   } else {
-  //     callback(new Error('CORS not allowed for this origin'));
-  //   }
-  // },
-  origins: 'http://dental-app-s3.s3-website-ap-southeast-1.amazonaws.com',
-  credentials: true, // Only if using cookies or auth headers
-  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+const corsOptions = {
+  origin: 'http://dental-app-s3.s3-website-ap-southeast-1.amazonaws.com',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+};
+app.use(cors(corsOptions));
 
-app.options('*', cors());
+// app.options('*', cors(corsOptions));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/appointments', appointmentRoutes);
