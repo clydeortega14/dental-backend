@@ -6,6 +6,10 @@ A full-stack web application that allows patients to register, log in, schedule 
 
 Coming soon...
 
+## Deployed URL
+ - Frontend: https://dt47nb2edopot.cloudfront.net/
+ - Backend: https://api.rent-hive.co/
+
 ## 🚀 Features
 
 - User registration and login with JWT authentication
