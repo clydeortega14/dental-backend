@@ -7,10 +7,13 @@ A full-stack web application that allows patients to register, log in, schedule 
 Coming soon...
 
 ## 📸 Screenshots
-
-![Login Page](./public/images/loginpage.png)
+![Home Page 01](./public/images/homepage01.png)
+![Home Page 02](./public/images/homepage02.png)
+![Login Page](./public/images/loginpage.png).
 ![Register Page](./public/images/registerpage.png)
-![Appointment Page](./screenshots/appointments.png)
+![Dashboard Page](./public/images/dashboard01.png).
+![Dashboard Page 02](./public/images/dashboard02.png).
+![Appointment Page](./screenshots/appointments.png).
 
 ## 🚀 Features
 
