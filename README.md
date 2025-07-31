@@ -50,8 +50,10 @@ Coming soon...
 ### Backend Setup
 
 ```bash
-cd backend
+git clone https://github.com/clydeortega14/dental-backend.git
+cd dental-backend
 npm install
+nodemon server.js OR node server.js
 ```
 ## 📸 Screenshots
 ![Database Schema](./public/images/databaseschema.png).
