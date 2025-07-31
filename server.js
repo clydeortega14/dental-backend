@@ -31,7 +31,11 @@ app.use(cors({
   // },
   origins: 'http://dental-app-s3.s3-website-ap-southeast-1.amazonaws.com',
   credentials: true, // Only if using cookies or auth headers
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
+app.options('*', cors());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/appointments', appointmentRoutes);
