@@ -8,7 +8,7 @@ Coming soon...
 
 ## 📸 Screenshots
 
-![Login Page](./screenshots/login.png)
+![Login Page](https://dt47nb2edopot.cloudfront.net/login)
 ![Appointment Page](./screenshots/appointments.png)
 
 ## 🚀 Features
