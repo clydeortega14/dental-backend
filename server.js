@@ -17,7 +17,8 @@ app.use(bodyParser.json());
 // allowed origins
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://dt47nb2edopot.cloudfront.net'
+  'https://dt47nb2edopot.cloudfront.net',
+  'http://dental-app-s3.s3-website-ap-southeast-1.amazonaws.com'
 ]
 app.use(cors({
 
