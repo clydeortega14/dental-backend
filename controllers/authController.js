@@ -85,3 +85,31 @@ exports.logout = (req, res) => {
 
   return res.status(200).json({message: 'Logged out successfully'});
 }
+
+exports.updateProfile = async (req, res) => {
+
+  const userId = req.user.id;
+  const { newName, newEmail} = req.body;
+
+  try{
+
+    await db.query(
+      'UPDATE users SET name = ?, email = ? WHERE id = ?',
+      [newName, newEmail, userId]
+    );
+
+    const [users] = await db.query(
+      'SELECT users.name, users.email FROM users where id = ?',
+      [userId]
+    );
+
+    res.status(200).json({
+      message: 'Profile Updated Successfully',
+      user: users[0]
+    })
+
+  } catch (error) {
+
+    res.status(500).json({error: 'Update failed!', message: error.message});
+  }
+}
